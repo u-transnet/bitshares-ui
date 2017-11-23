@@ -20,10 +20,10 @@ export const settingsAPIs = {
     WS_NODE_LIST: [
         {url: "wss://fake.automatic-selection.com", location: {translate: "settings.api_closest"}},
         {url: "ws://127.0.0.1:8090", location: "Locally hosted"},
-        {url: "ws://95.85.60.154:11011", location: "utransnet"},
+        {url: "wss://transnet.space:10443/ws", location: "Transnet Space"},
         {url: "wss://node.testnet.bitshares.eu", location: "Public Testnet Server (Frankfurt, Germany)"}
     ],
-    DEFAULT_FAUCET: "http://95.85.60.154",
+    DEFAULT_FAUCET: "https://transnet.space:10443",
     TESTNET_FAUCET: "https://faucet.testnet.bitshares.eu",
     RPC_URL: "https://openledger.info/api/"
 };
