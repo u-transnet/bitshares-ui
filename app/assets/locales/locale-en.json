@@ -842,6 +842,7 @@
     "no": "No",
     "walletLockTimeout": "Wallet auto-lock time (seconds, 0 to disable)",
     "themes": "Theme",
+    "utTheme": "UT theme",
     "darkTheme": "Dark theme",
     "lightTheme": "Light theme",
     "olDarkTheme": "Openledger dark",
