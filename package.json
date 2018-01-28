@@ -218,6 +218,5 @@
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.21.0",
     "worker-loader": "^1.1.0"
-
   }
 }
