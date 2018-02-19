@@ -31,7 +31,8 @@ class Settings extends React.Component {
             settingEntries: {
                 general: ["locale", "unit", "showSettles", "walletLockTimeout", "themes",
                 "showAssetPercent", "passwordLogin", "reset"],
-                access: ["apiServer", "faucet_address"]
+                access: ["apiServer", "faucet_address"],
+                ut: ["skillRecipient", "gitName"]
             }
         };
     }
@@ -73,7 +74,8 @@ class Settings extends React.Component {
             "backup",
             "restore",
             "access",
-            "faucet_address"
+            "faucet_address",
+            "ut_settings"
         ];
 
         if (props.settings.get("passwordLogin")) {
@@ -212,6 +214,20 @@ class Settings extends React.Component {
             break;
         case "faucet_address":
             entries = <input type="text" defaultValue={settings.get("faucet_address")} onChange={this._onChangeSetting.bind(this, "faucet_address")}/>
+            break;
+        case "ut_settings":
+            entries =  <div class="block-list">
+                          <header><span><Translate content="settings.git_name" /></span></header><br/>
+                          <input type="text" defaultValue={this.props.settings.get("gitName")} onChange={this._onChangeSetting.bind(this, "gitName")} />
+                          <header><span><Translate content="settings.git_token" /></span></header><br/>
+                          <input type="text" defaultValue={this.props.settings.get("gitToken")} onChange={this._onChangeSetting.bind(this, "gitToken")} />
+                          <header><span><Translate content="settings.jira_name" /></span></header><br/>
+                          <input type="text" defaultValue={this.props.settings.get("jiraName")} onChange={this._onChangeSetting.bind(this, "jiraName")} />
+                          <header><span><Translate content="settings.jira_token" /></span></header><br/>
+                          <input type="text" defaultValue={this.props.settings.get("jiraToken")} onChange={this._onChangeSetting.bind(this, "jiraToken")} />    
+                          <header><span><Translate content="settings.skill_recipient" /></span></header><br/>
+                          <input type="text" defaultValue={this.props.settings.get("skillRecipient")} onChange={this._onChangeSetting.bind(this, "skillRecipient")} />
+                        </div>
             break;
         default:
             entries = settingEntries[activeEntry].map(setting => {

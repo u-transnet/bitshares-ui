@@ -84,10 +84,7 @@ class SettingsStore {
                 {translate: "no"}
             ],
             themes: [
-                "utTheme",
-                "darkTheme",
-                "lightTheme",
-                "midnightTheme"
+                "utTheme"
             ],
             passwordLogin: [
                 {translate: "cloud_login"},

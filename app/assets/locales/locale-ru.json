@@ -947,7 +947,14 @@
     "connection_error":"Не удается подключиться к узлу API %(url)s, возврат к известным рабочим узлам",
     "low_latency":"Низкое значение задержки",
     "medium_latency":"Среднее значение задержки",
-    "high_latency":"Высокое значение задержки"
+    "high_latency":"Высокое значение задержки",
+    "ut_settings": "Настройки UT",
+    "ut_settings_text": "UT настройки интеграции",
+    "git_name": "Имя профиля в GitHub",
+    "git_token": "Токен в GitHub",
+    "jira_name": "Имя профиля в Jira",
+    "jira_token": "Токен в Jira",
+    "skill_recipient": "Получатель скилла"
   },
   "footer":{
     "title":"BitShares",
