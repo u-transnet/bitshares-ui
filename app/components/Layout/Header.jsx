@@ -26,7 +26,7 @@ import notify from "actions/NotificationActions";
 import AccountImage from "../Account/AccountImage";
 import {ChainStore} from "bitsharesjs";
 
-var logo = require("assets/logo-ico-blue.png");
+var logo = require("assets/logo.png");
 
 // const FlagImage = ({flag, width = 20, height = 20}) => {
 //     return <img height={height} width={width} src={`${__BASE_URL__}language-dropdown/${flag.toUpperCase()}.png`} />;
