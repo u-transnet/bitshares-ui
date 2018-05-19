@@ -22,7 +22,7 @@ nvm use v6
 Once you have Node installed, you can clone the repo:
 
 ```
-git clone https://github.com/u-transnet/utranssnet-ui.git
+git clone https://github.com/u-transnet/utransnet-ui.git
 cd transnet-ui
 ```
 
