@@ -6,8 +6,7 @@ This is a light wallet that connects to a Transnet API provided by the *witness_
 
 It *stores all keys locally* in the browser, *never exposing your keys to anyone* as it signs transactions locally before transmitting them to the API server which then broadcasts them to the blockchain network. The wallet is encrypted with a password of your choosing and encrypted in a browser database.
 
-## Getting started
-
+## Руководство по началу работы
 Transnet-UI depends node Node.js, and version 6+ is required.
 
 On Ubuntu and OSX, the easiest way to install Node is to use the [Node Version Manager](https://github.com/creationix/nvm).
@@ -33,7 +32,7 @@ Before launching the GUI you will need to install the npm packages:
 npm install
 ```
 
-## Running the dev server
+## Запуск dev сервера
 
 The dev server uses Express in combination with Webpack.
 
@@ -45,7 +44,7 @@ npm start
 
 Once the compilation is done the GUI will be available in your browser at: `localhost:8080` or `127.0.0.1:8080`. Hot Reloading is enabled so the browser will live update as you edit the source files.
 
-## Production
+## Сборка production
 If you'd like to host your own wallet somewhere, you should create a production build and host it using NGINX or Apache. In order to create a prod bundle, simply run the following command:
 
 ```
@@ -54,7 +53,7 @@ npm run build
 This will create a bundle in the /dist folder that can be hosted with the web server of your choice.
 
 
-### Installable wallets
+### Устанавливаемые кошельки
 We use Electron to provide installable wallets, available for Windows, OSX and Linux Debian platforms such as Ubuntu. First, make sure your local python version is 2.7.x, as a dependency requires this.
 
 On Linux you will need to install the following packages to handle icon generation:
@@ -72,13 +71,13 @@ __Mac__
 
 This will compile the UI with some special modifications for use with Electron, generate installable binaries with Electron and copy the result to the root `build/binaries` folder.
 
-## Related projects
+## Связанные проекты
 - [bitsharesjs](https://github.com/u-transnet/bitsharesjs)
 - [bitsharesjs-ws](https://github.com/u-transnet/bitsharesjs-ws)
 
-## Contributing
-We'd love to have your helping hand on our project! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+## Сотрудничество
+Мы будем рады вашей помощи в развитии проекта! Откройте [CONTRIBUTING.ru.md](CONTRIBUTING.ru.md) для того, чтобы узнать чем Вы можете поможете помочь проекту и как присоединиться
 
-## License
-Project is under the MIT license. See [LICENSE](LICENSE) for more information.
+## Лицензия
+Проект использует MIT лицензию. Откройте [LICENSE](LICENSE) для подробностей
 
