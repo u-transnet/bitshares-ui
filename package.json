@@ -126,7 +126,7 @@
     "alt-container": "^1.0.0",
     "alt-react": "0.0.1",
     "bignumber.js": "^4.0.0",
-    "bitsharesjs": "https://github.com/u-transnet/bitsharesjs.git#es_build",
+    "bitsharesjs": "https://github.com/u-transnet/bitsharesjs.git",
     "browser-locale": "^1.0.3",
     "classnames": "^2.2.1",
     "cookies-js": "^1.2.1",
